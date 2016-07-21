@@ -1,0 +1,20 @@
+spring:
+  redis:
+    database: 0
+    host: 10.10.20.112
+    password:
+    pool:
+      max-active: 8
+      min-idle: 1
+      max-wait: -1
+  data:
+    mongodb:
+      host: 10.10.20.172
+      database: test
+      port: 27017
+      repositories:
+        enabled: true
+    solr:
+      zkHost: 10.10.20.152:2181,10.10.20.153:2181,10.10.20.154:2181
+      host: http://10.10.20.86:8983/solr
+
